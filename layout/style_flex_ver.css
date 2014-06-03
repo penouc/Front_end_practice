@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.big {
+	height: 500px;
+	margin-top: 50px;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #0f0;
+}
+
+.small {
+	margin: auto;
+	background-color: #0ff;
+}
