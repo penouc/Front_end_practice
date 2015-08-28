@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>avalon Blog</title>
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<script type="text/javascript" src="js/avalon.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<body>
+	<!-- HEADER -->
+	<div class="head">
+	    <h1 class="ui header">Avalon Learning Blog
+	        <div class="sub header">带你快速走进 Avalon 的世界</div>
+	    </h1>
+	</div>
+	<!-- Blog正文 -->
+	<div class="ui attached bottom segment" id="blogs" ms-controller="blog">
+	    <div class="ui stacked segment blog">
+	        <div class="blog-body">
+	        <h2 class="ui header">
+	            <div class="content">
+	                {{subject}}
+	                <div class="sub header">{{author}} • {{publish_date|date('MM-dd-yy')}} • <span class="ui label"><i class="comment icon"></i> {{comment_count}}</span></div>
+	            </div>
+	        </h2>
+	        <div class="ui divider"></div>
+	        <div class="blog-content">{{content|html}}</div>
+	    </div>
+	</div>
+</body>
+<script type="text/javascript" src="js/semantic.min.js"></script>
+<script type="text/javascript">
+	var model = avalon.define('blog', function(vm) {
+		vm.subject = 'Javascript';
+		vm.author  = 'Penouc';
+		vm.publish_date  = new Date();
+		vm.comment_count = 221;
+		vm.content = '<p>这是第一行</p><p>这是第二行</p><p>这是第三行</p><p>这是第四行</p><p>这是第五行</p>';
+	});
+</script>
+</html>

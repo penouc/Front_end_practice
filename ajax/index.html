@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax_demo</title>
+</head>
+<body>
+	<div class="nob"></div>
+	<input id="btn-f" type="button" value="wtf">
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/myAjax.js"></script>
+<script type="text/javascript">
+$('#btn-f').bind('click',null,function() {
+	myAjax.post('wtf.html','name=pl&age=12&job=engeneer',function(data){
+		if(data) {
+			$('.nob').html('wtf!!!')
+		}
+	})
+})
+	
+</script>
+</html>

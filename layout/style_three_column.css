@@ -1,0 +1,32 @@
+/*三栏左右两列宽度定中间自适应*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.one {
+	width: 200px;
+	height: 600px;
+	float: left;
+}
+
+.three {
+	width: 200px;
+	height: 600px;
+	float: right;
+}
+
+.two {
+	margin: 0 210px;
+	height: 600px;
+}
+
+.one .two .three {
+	outline: 1px solid #000;
+}

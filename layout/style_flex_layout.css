@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	outline: 1px solid #000;
+}
+
+
+.container {
+	display: flex;
+	display: -webkit-flex;
+	height: 100px;
+	margin-top: 50px;
+}
+
+.one {
+	-webkit-flex: initial;
+			flex: initial;
+	width: 200px;
+	min-width: 100px;
+}
+
+.two {
+	-webkit-flex: none;
+			flex: none;
+	width: 200px;
+}
+
+.three {
+	-webkit-flex: 1;
+			flex: 1;
+}
+
+.four {
+	-webkit-flex: 2;
+			flex: 2;
+}

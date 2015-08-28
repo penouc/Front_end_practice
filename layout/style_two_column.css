@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.swapper {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.header {
+	margin: 20px 0;
+	height: 60px;
+	border: 1px solid #f00;
+}
+
+/* 基于浮动布局 */
+.content .primary {
+	width: 650px;
+	height: 600px;
+	padding-right: 20px;
+	float: right;
+	display: inline;
+	border: 1px solid #0ff;
+}
+
+.content .secondary {
+	width: 230px;
+	height: 600px;
+	float: left;
+	display: inline;
+	border: 1px solid #0f0;
+}
+
+.content {
+	overflow: auto;
+}
